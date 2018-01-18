@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+	<head>
+		<title>{{title}}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/uikit-rtl.css"/>
+	</head>
+	<body>
+		<div class="uk-offcanvas-content">
+			<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-usage">Open</button>
+			<a href="#offcanvas-usage" uk-toggle>Open</a>
+			<div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+					<h3>Title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>	
+		</div>
+		
+		<header class="uk-card uk-card-body uk-width-1-1 purple lighten-5">
+			<nav class="uk-navbar-container" uk-navbar>
+				
+				<div class="uk-navbar-left">
+					<ul class="uk-navbar-nav">
+						<li class="uk-active">
+							<a href="#">saaaaaaaaaaaaa</a>
+						</li>
+						<li>
+							<a href="#">Parent</a>
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li class="uk-active">
+										<a href="#">Active</a>
+									</li>
+									<li>
+										<a href="#">Item</a>
+									</li>
+									<li>
+										<a href="#">Item</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Item</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="uk-navbar-right">
+					<ul class="uk-navbar-nav">
+						<li class="uk-active">
+							<a href="#">Active</a>
+						</li>
+						<li>
+							<a href="#">Parent</a>
+							<div class="uk-navbar-dropdown">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li class="uk-active">
+										<a href="#">Active</a>
+									</li>
+									<li>
+										<a href="#">Item</a>
+									</li>
+									<li>
+										<a href="#">Item</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Item</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<button type="button" class="uk-button uk-button-primary" uk-toggle="target: #sidebar">=</button>
+			<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-usage">Open</button>
+		</header>
+		<div class="uk-container">
+			{{{body}}}
+		</div>
+		<script type="text/javascript" src="js/uikit.js"/>
+		<script type="text/javascript" src="js/uikit-icons.js"/>
+	</body>
+</html>		
