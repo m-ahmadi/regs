@@ -1,9 +1,8 @@
 let express = require('express');
 let router = express.Router();
 
-/* GET home page. */
-router.get('/', (req, res, next) => {
-  res.render('index');
+router.get('/:step', (req, res, next) => {
+	res.render(`add-car/step${req.params.step}`);
 });
 
 module.exports = router;
