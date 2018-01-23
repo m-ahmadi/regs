@@ -1,8 +1,8 @@
 const gulp = require("gulp");
 const livereload = require("gulp-livereload");
-const a = "./**/*.hbs";
-const b = "./**/*.css";
-const c = "./**/*.js";
+const a = "./views/**/*.hbs";
+const b = "./views/**/*.css";
+const c = "./views/**/*.js";
 
 gulp.task("live-1", () => {
 	gulp.src(a)
