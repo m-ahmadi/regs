@@ -1,64 +1,69 @@
 <header class="uk-card uk-card-default">
 	<div class="uk-card-body uk-card-small">
-		<div class="uk-card-body">
-			{{!-- navigation --}}
-			<nav class="uk-float-left">
-				<ul class="uk-subnav uk-subnav-divider">
-					<li>
-						<a class="uk-button uk-button-text" uk-toggle="target: #sidebar">
-							<span uk-icon="icon: menu">
-						</a>
-					</li>
-					<li class="uk-active">
-						<a href="#">
-							<span uk-icon="icon: home; ratio: 1.7"></span> خانه</a>
-					</li>
-					<li class="uk-active">
-						<a href="#">
-							<span uk-icon="icon: r-service-centers; ratio: 1.7"></span> تعمیرگاه ها</a>
-					</li>
-				</ul>
-			</nav>
-			<span class="uk-float-right" uk-icon="icon: r-logo-text; ratio: 9"></span>
+		{{!-- navigation --}}
+		<nav class="uk-float-left">
+			<ul class="uk-subnav uk-subnav-divider">
+				<li>
+					<a class="uk-button uk-button-text" uk-toggle="target: #sidebar">
+						<span uk-icon="icon: menu">
+					</a>
+				</li>
+				<li class="">
+					<a href="#">
+						<span uk-icon="icon: home; ratio: 1.7"></span> خانه</a>
+				</li>
+				<li class="uk-active">
+					<a href="#">
+						<span uk-icon="icon: r-service-centers; ratio: 1.7"></span> تعمیرگاه ها</a>
+				</li>
+			</ul>
+		</nav>
+		<span class="uk-float-right" uk-icon="icon: r-logo-text; ratio: 9"></span>
 
 
-			{{!-- user --}}
-			<div class="uk-inline uk-float-right">
-				<img class="uk-border-circle" src="/images/avatar.jpg"
-					width="40" height="40" alt="Border circle" style="border: 1.7px rgb(48, 48, 48) solid;">
-				<a class="uk-button">
-					<span uk-icon="icon: r-user; ratio: 1.9">
-				</a>
-				<div uk-drop="offset:0; delay-hide: 100">
-					<div class="uk-card uk-card-body uk-card-default">
-						<a href="#" class="uk-link">
-							<span uk-icon="icon: sign-out">خروج</span>
-						</a>
-					</div>
+		{{!-- user --}}
+		<div class="uk-inline uk-float-right">
+			<img class="uk-border-circle" src="/images/avatar.jpg" width="40" height="40" alt="Border circle" style="border: 1.7px rgb(48, 48, 48) solid;">
+			<a class="uk-button">
+				<span uk-icon="icon: r-user; ratio: 1.9">
+			</a>
+			<div uk-drop="offset:0; delay-hide: 100">
+				<div class="uk-card uk-card-body uk-card-default">
+					<a href="#" class="uk-link">
+						<span uk-icon="icon: sign-out">خروج</span>
+					</a>
 				</div>
 			</div>
-
-			{{!-- notifications --}}
-			<div class="uk-inline uk-float-right">
-				<a class="uk-button">
-					<span class="uk-badge red">2</span>
-					<span uk-icon="icon: r-bell; ratio: 1.7" class=""></span>
-				</a>
-				<div uk-drop="offset:0; delay-hide: 100">
-					<div class="uk-card uk-card-body uk-card-default">
-						<a href="#" class="uk-link">
-							<span uk-icon="icon: sign-out">خروج</span>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			{{!-- search --}}
-			<form class="uk-search uk-search-default uk-float-right uk-margin-right">
-				<a href="" class="uk-search-icon-flip" uk-search-icon></a>
-				{{!--
-				<input class="uk-search-input" type="search" placeholder="جست و جو..."> --}}
-				<input class="uk-input uk-width-1-1" type="search" placeholder="جست و جو...">
-			</form>
 		</div>
+
+		{{!-- notifications --}}
+		<div class="uk-inline uk-float-right">
+
+			<a class="uk-button">
+				<div class="uk-inline">
+					<span uk-icon="icon: r-bell; ratio: 1.7" class=""></span>
+					<span class="uk-badge uk-position-top-left red"
+						style="top: -6px; right: -10px;">9</span>
+				</div>
+			</a>
+			<div uk-drop="offset:0; delay-hide: 100">
+				<div class="uk-card uk-card-body uk-card-default">
+					<a href="#" class="uk-link">
+						<span uk-icon="icon: sign-out">خروج</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		{{!-- search --}}
+		<form class="uk-search uk-search-default
+				uk-float-right
+				uk-margin-right
+				uk-width-1-6">
+			<a class="uk-search-icon-flip" uk-search-icon></a>
+			{{!--
+			<input class="uk-search-input" type="search" placeholder="جست و جو..."> --}}
+			<input class="uk-input" type="search" placeholder="جست و جو...">
+		</form>
+	</div>
 </header>
