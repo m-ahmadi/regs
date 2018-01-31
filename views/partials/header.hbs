@@ -1,5 +1,5 @@
 <header class="uk-card uk-card-default">
-	<div class="uk-card-body uk-card-small">
+	<div class="uk-card-body uk-card-small orange lighten-5">
 		{{!-- navigation --}}
 		<nav class="uk-float-left uk-margin-small">
 			<ul class="uk-subnav uk-subnav-divider">
@@ -9,21 +9,24 @@
 					</a>
 				</li>
 				<li class="">
-					<a href="#">
+					<a href="/">
 						<span uk-icon="icon: home; ratio: 1.7"></span> خانه</a>
 				</li>
 				<li class="uk-active">
-					<a href="#">
+					<a href="/service-centers">
 						<span uk-icon="icon: r-service-centers; ratio: 1.7"></span> تعمیرگاه ها</a>
 				</li>
 			</ul>
 		</nav>
-		<span class="uk-float-right" uk-icon="icon: r-logo-text; ratio: 9"></span>
+
+		{{!-- logo --}}
+		<span class="uk-float-right uk-visible@m" uk-icon="icon: r-logo-text; ratio: 9"></span>
 
 
 		{{!-- user --}}
 		<div class="uk-inline uk-float-right uk-margin-small">
-			<img class="uk-border-circle" src="/images/avatar.jpg" width="40" height="40" alt="Border circle" style="border: 1.7px rgb(48, 48, 48) solid;">
+			<img class="uk-border-circle" src="/images/avatar.jpg"
+			width="40" height="40" alt="Border circle" style="border: 1.7px rgb(104, 104, 104) solid;">
 			<a class="uk-button">
 				<span uk-icon="icon: r-user; ratio: 1.9">
 			</a>

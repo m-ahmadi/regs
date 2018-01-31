@@ -1,0 +1,4 @@
+[submodule "uk"]
+	path = uk
+	url = https://github.com/uikit/uikit.git
+	branch = master

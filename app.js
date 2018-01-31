@@ -30,7 +30,9 @@ app.use( express.static( path.join(__dirname, 'public') ) );
 app.use('/', require('./routes/index'));
 app.use('/service-centers', require('./routes/service-centers'));
 app.use('/search-result', require('./routes/search-result'));
-app.use('/add_car', require('./routes/add-car'));
+app.use('/add-car', require('./routes/add-car'));
+app.use('/my-cars', require('./routes/my-cars'));
+app.use('/create-service-center', require('./routes/create-service-center'));
 
 // catch 404 and forward to error handler
 app.use( (req, res, next) => {

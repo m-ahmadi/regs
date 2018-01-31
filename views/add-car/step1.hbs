@@ -1,10 +1,51 @@
 <div class="uk-card uk-card-default">
 	<div class="uk-card-header">
-		<h1 class="uk-card-title">اضافه کردن ماشین</h1>
-		<span uk-icon="icon: logo; ratio: 3"></span>
+		<span uk-icon="icon: r-add-car; ratio: 2"></span>
+		<label>اضافه کردن ماشین</label>
 	</div>
 	<div class="uk-card-body">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+		<form class="uk-grid-small" uk-grid>
+
+			<div class="uk-margin">
+				<label for="">برند</label>
+				<select class="uk-select">
+					<option>تویوتا</option>
+					<option>ژیان</option>
+					<option>جلال همتی</option>
+				</select>
+			</div>
+
+			<div class="uk-margin">
+				<label for="">مدل:</label>
+				<select class="uk-select">
+					<option>سوناتا</option>
+					<option>ژیان</option>
+					<option>جلال همتی</option>
+				</select>
+			</div>
+
+			<div class="uk-margin">
+				<label for="">رنگ:</label>
+				<select class="uk-select">
+					<option>تویوتا</option>
+					<option>ژیان</option>
+					<option>جلال همتی</option>
+				</select>
+			</div>
+
+			<div class="uk-margin">
+				<label for="">سال:</label>
+				<select class="uk-select">
+					<option>تویوتا</option>
+					<option>ژیان</option>
+					<option>جلال همتی</option>
+				</select>
+			</div>
+
+			<div>
+				{{>plate-edit}}
+			</div>
+		</form>
 	</div>
 	<div class="uk-card-footer">
 		<button type="button" class="uk-button uk-button-primary">ادامه</button>

@@ -1,0 +1,36 @@
+@import "fontfaces";
+$global-font-family:                             BNazanin, BYekan, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+// $global-font-family:                             BYekan, BNazanin, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+// $global-font-family:                             Tahoma, BNazanin, BYekan, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$global-font-size:                               24px;
+$global-line-height:                             1.5;      // 24px
+$global-xxlarge-font-size:                       2.625rem; // 42px
+$global-xlarge-font-size:                        2rem;     // 32px
+$global-large-font-size:                         1.5rem;   // 24px
+$global-medium-font-size:                        1.25rem;  // 20px
+$global-small-font-size:                         0.875rem; // 14px
+$global-color:                                   #666;
+$global-emphasis-color:                          #333;
+$global-muted-color:                             #999;
+$global-link-color:                              #1e87f0;
+$global-link-hover-color:                        #0f6ecd;
+$global-inverse-color:                           #fff;
+$global-background:                              #fff;
+$global-muted-background:                        #f8f8f8;
+$global-primary-background:                      #1e87f0;
+$global-secondary-background:                    #222;
+$global-success-background:                      #32d296;
+$global-warning-background:                      #faa05a;
+$global-danger-background:                       #f0506e;
+
+@import "../ukscss/variables-theme.scss";
+@import "../ukscss/mixins-theme.scss";
+@import "../ukscss/uikit-theme.scss";
+@import "color";
+@import "plate";
+
+.r-card-border {
+	@extend .uk-border-rounded;
+	border: 1px solid rgb(212, 212, 212);
+}

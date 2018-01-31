@@ -1,0 +1,15 @@
+.r-plate-edit {
+	input[type=text],
+	input[type=number] {
+		/*rtl:ignore*/
+		direction: ltr;
+	}
+	@extend .r-c1;
+	@extend .r-c2;
+	@extend .r-c3;
+	@extend .r-c4;
+	@extend .r-c5;
+	@extend .r-text;
+	@extend .r-height;
+	@extend .r-font;
+}

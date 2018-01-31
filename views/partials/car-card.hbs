@@ -1,0 +1,45 @@
+<div class="uk-card uk-card-default r-card-border">
+	<div uk-grid class="uk-card-header uk-padding-small uk-grid-collapse">
+		<div class="uk-inline" style="width: 10%;">
+			<a class="uk-icon-link" uk-icon="icon: more-vertical"></a>
+			<div uk-drop="offset: 0; delay-hide: 0; position: bottom-justify;">
+				<div class="uk-card uk-card-body uk-card-default uk-width-small grey lighten-4" style="padding: 30px 10px;">
+					<ul class="uk-nav uk-nav-default">
+						<li>
+							<a href="">
+								<span uk-icon="icon: pencil"></span> ویرایش</a>
+						</li>
+						<li class="uk-nav-divider"></li>
+						<li>
+							<a href="">
+								<span uk-icon="icon: trash"></span> حذف</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="width: 80%;">
+			{{>plate-view}}
+		</div>
+	</div>
+	<div class="uk-card-body">
+		<table class="uk-table uk-table-divider">
+			<tr>
+				<th>برند</th>
+				<td>تویوتا</td>
+			</tr>
+			<tr>
+				<th>مدل</th>
+				<td>سوناتا</td>
+			</tr>
+			<tr>
+				<th>رنگ</th>
+				<td>مشکی</td>
+			</tr>
+			<tr>
+				<th>سال</th>
+				<td>1394</td>
+			</tr>
+		</table>
+	</div>
+</div>
