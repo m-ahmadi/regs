@@ -10,7 +10,7 @@ $global-xlarge-font-size:                        2rem;     // 32px
 $global-large-font-size:                         1.5rem;   // 24px
 $global-medium-font-size:                        1.25rem;  // 20px
 $global-small-font-size:                         0.875rem; // 14px
-$global-color:                                   #666;
+$global-color:                                   #3D5781;
 $global-emphasis-color:                          #333;
 $global-muted-color:                             #999;
 $global-link-color:                              #1e87f0;
@@ -30,6 +30,10 @@ $global-danger-background:                       #f0506e;
 @import "color";
 @import "plate";
 
+.r-header {
+	border-bottom: 4px solid red;
+	background: #f1f1f1;
+}
 .r-card-border {
 	@extend .uk-border-rounded;
 	border: 1px solid rgb(212, 212, 212);

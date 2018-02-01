@@ -1,11 +1,11 @@
-<header class="uk-card uk-card-default">
-	<div class="uk-card-body uk-card-small orange lighten-5">
-		{{!-- navigation --}}
+<header class="r-header uk-card uk-card-default">
+	<div class="uk-card-body uk-card-small">
+		<!-- navigation -->
 		<nav class="uk-float-left uk-margin-small">
 			<ul class="uk-subnav uk-subnav-divider">
 				<li>
 					<a class="uk-button uk-button-text" uk-toggle="target: #sidebar">
-						<span uk-icon="icon: menu">
+						<span uk-icon="icon: menu"></span>
 					</a>
 				</li>
 				<li class="">
@@ -19,16 +19,16 @@
 			</ul>
 		</nav>
 
-		{{!-- logo --}}
+		<!-- logo -->
 		<span class="uk-float-right uk-visible@m" uk-icon="icon: r-logo-text; ratio: 9"></span>
 
 
-		{{!-- user --}}
-		<div class="uk-inline uk-float-right uk-margin-small">
+		<!-- user -->
+		<div class="uk-inline uk-float-right">
 			<img class="uk-border-circle" src="/images/avatar.jpg"
 			width="40" height="40" alt="Border circle" style="border: 1.7px rgb(104, 104, 104) solid;">
 			<a class="uk-button">
-				<span uk-icon="icon: r-user; ratio: 1.9">
+				<span uk-icon="icon: r-user; ratio: 1.9"></span>
 			</a>
 			<div uk-drop="offset:0; delay-hide: 100">
 				<div class="uk-card uk-card-body uk-card-default">
@@ -39,8 +39,8 @@
 			</div>
 		</div>
 
-		{{!-- notifications --}}
-		<div class="uk-inline uk-float-right uk-margin-small">
+		<!-- notifications -->
+		<div class="uk-inline uk-float-right">
 
 			<a class="uk-button">
 				<div class="uk-inline">
@@ -58,7 +58,7 @@
 			</div>
 		</div>
 
-		{{!-- search --}}
+		<!-- search -->
 		<form class="uk-search uk-search-default
 				uk-float-right
 				uk-margin-small
@@ -68,9 +68,7 @@
 				uk-width-1-4@xl
 				">
 			<a class="uk-search-icon-flip" uk-search-icon></a>
-			{{!--
-			<input class="uk-search-input" type="search" placeholder="جست و جو..."> --}}
-			<input class="uk-input" type="search" placeholder="جست و جو...">
+			<input class="uk-input" type="search" placeholder="جستجو">
 		</form>
 	</div>
 </header>
