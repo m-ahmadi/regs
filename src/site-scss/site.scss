@@ -1,9 +1,9 @@
 @import "fontfaces";
-$global-font-family:                             BNazanin, BYekan, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-// $global-font-family:                             BYekan, BNazanin, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+// $global-font-family:                             BNazanin, BYekan, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$global-font-family:                             BYekan, BNazanin, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 // $global-font-family:                             Tahoma, BNazanin, BYekan, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-$global-font-size:                               24px;
+$global-font-size:                               16px;
 $global-line-height:                             1.5;      // 24px
 $global-xxlarge-font-size:                       2.625rem; // 42px
 $global-xlarge-font-size:                        2rem;     // 32px
@@ -24,9 +24,31 @@ $global-success-background:                      #32d296;
 $global-warning-background:                      #faa05a;
 $global-danger-background:                       #f0506e;
 
+$card-hover-background:                         $global-muted-background !default;
+
+$card-default-background:                       $global-muted-background !default;
+$card-default-color:                            $global-color !default;
+$card-default-title-color:                      $global-emphasis-color !default;
+$card-default-hover-background:                 darken($card-default-background, 5%) !default;
+
+$card-primary-background:                       $global-primary-background !default;
+$card-primary-color:                            $global-inverse-color !default;
+$card-primary-title-color:                      $card-primary-color !default;
+$card-primary-hover-background:                 darken($card-primary-background, 5%) !default;
+$card-primary-color-mode:                       light !default;
+
+$card-secondary-background:                     $global-secondary-background !default;
+$card-secondary-color:                          $global-inverse-color !default;
+$card-secondary-title-color:                    $card-secondary-color !default;
+$card-secondary-hover-background:               darken($card-secondary-background, 5%) !default;
+$card-secondary-color-mode:                     light !default;
+
 @import "../ukscss/variables-theme.scss";
+
 @import "../ukscss/mixins-theme.scss";
+
 @import "../ukscss/uikit-theme.scss";
+
 @import "color";
 @import "plate";
 
@@ -37,4 +59,15 @@ $global-danger-background:                       #f0506e;
 .r-card-border {
 	@extend .uk-border-rounded;
 	border: 1px solid rgb(212, 212, 212);
+}
+
+.r-car {
+	background: #f9f9f9;
+	.uk-drop {
+		width: 200px;
+	}
+}
+
+.r-progress-line {
+	border-bottom: 2px solid $global-color;
 }

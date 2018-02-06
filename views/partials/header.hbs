@@ -1,11 +1,12 @@
-<header class="r-header uk-card uk-card-default">
+<header class="r-header uk-card uk-card-default" uk-sticky>
+
 	<div class="uk-card-body uk-card-small">
 		<!-- navigation -->
-		<nav class="uk-float-left uk-margin-small">
+		<nav class="uk-float-left uk-margin-small uk-visible@m">
 			<ul class="uk-subnav uk-subnav-divider">
 				<li>
-					<a class="uk-button uk-button-text" uk-toggle="target: #sidebar">
-						<span uk-icon="icon: menu"></span>
+					<a id="sidebar-toggle" class="uk-button uk-button-text">
+						<span uk-icon="icon: menu; ratio: 2;"></span>
 					</a>
 				</li>
 				<li class="">
@@ -59,7 +60,7 @@
 		</div>
 
 		<!-- search -->
-		<form class="uk-search uk-search-default
+		<!-- <form class="uk-search uk-search-default
 				uk-float-right
 				uk-margin-small
 				uk-width-1-2@s
@@ -69,6 +70,6 @@
 				">
 			<a class="uk-search-icon-flip" uk-search-icon></a>
 			<input class="uk-input" type="search" placeholder="جستجو">
-		</form>
+		</form> -->
 	</div>
 </header>

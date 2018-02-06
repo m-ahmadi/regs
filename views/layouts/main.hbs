@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 	<title>سامانه رگلاژ</title>
 	<meta charset="utf-8" />
@@ -9,15 +10,20 @@
 </head>
 
 <body>
-	<div class="uk-offcanvas-content">
-		{{>sidebar}}
-		{{>header}}
-		<div>
+	{{>header}}
+	<div uk-grid class="uk-grid-collapse">
+		<div id="sidebar-container" class="uk-height-viewport">
+			{{>sidebar}}
+		</div>
+		<div class="uk-width-expand">
 			{{{body}}}
 		</div>
 	</div>
+
 	<script type="text/javascript" src="/js/uikit.js"></script>
 	<script type="text/javascript" src="/js/uikit-icons.js"></script>
+	<script type="text/javascript" src="/js/jquery.slim.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
 </body>
 
 </html>

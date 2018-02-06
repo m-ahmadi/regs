@@ -1,49 +1,63 @@
 <div class="uk-card uk-card-default">
-	<div class="uk-card-header">
+	<div class="uk-card-header uk-position-relative">
+		<div class="r-progress-line"></div>
 		<span uk-icon="icon: r-add-car; ratio: 2"></span>
-		<label>اضافه کردن ماشین</label>
+		<span uk-icon="icon: r-circle-outline; ratio: 2"></span>
+		<span uk-icon="icon: r-checkmark-outline; ratio: 2"></span>
+		<label>اضافه نمودن خودرو</label>
 	</div>
 	<div class="uk-card-body">
-		<form class="uk-grid-small" uk-grid>
+		<form class="uk-form-labels uk-grid-small" uk-grid>
 
-			<div class="uk-margin">
-				<label for="">برند</label>
-				<select class="uk-select">
-					<option>تویوتا</option>
-					<option>ژیان</option>
-					<option>جلال همتی</option>
-				</select>
+			<div class="uk-width-1-2@m uk-width-1-1@s">
+				<label class="uk-form-label" for="">برند</label>
+				<div class="uk-form-controls">
+					<select class="uk-select">
+						<option>تویوتا</option>
+						<option>ژیان</option>
+						<option>جلال همتی</option>
+					</select>
+				</div>
 			</div>
 
-			<div class="uk-margin">
-				<label for="">مدل:</label>
-				<select class="uk-select">
-					<option>سوناتا</option>
-					<option>ژیان</option>
-					<option>جلال همتی</option>
-				</select>
+			<div class="uk-width-1-2@m uk-width-1-1@s">
+				<label class="uk-form-label" for="">مدل</label>
+				<div class="uk-form-controls">
+					<select class="uk-select">
+						<option>سوناتا</option>
+						<option>ژیان</option>
+						<option>جلال همتی</option>
+					</select>
+				</div>
 			</div>
 
-			<div class="uk-margin">
-				<label for="">رنگ:</label>
-				<select class="uk-select">
-					<option>تویوتا</option>
-					<option>ژیان</option>
-					<option>جلال همتی</option>
-				</select>
+			<div class="uk-width-1-2@m uk-width-1-1@s">
+				<label class="uk-form-label" for="">رنگ</label>
+				<div class="uk-form-controls">
+					<select class="uk-select">
+						<option>تویوتا</option>
+						<option>ژیان</option>
+						<option>جلال همتی</option>
+					</select>
+				</div>
 			</div>
 
-			<div class="uk-margin">
-				<label for="">سال:</label>
-				<select class="uk-select">
-					<option>تویوتا</option>
-					<option>ژیان</option>
-					<option>جلال همتی</option>
-				</select>
+			<div class="uk-width-1-2@m uk-width-1-1@s">
+				<label class="uk-form-label" for="">سال</label>
+				<div class="uk-form-controls">
+					<select class="uk-select">
+						<option>تویوتا</option>
+						<option>ژیان</option>
+						<option>جلال همتی</option>
+					</select>
+				</div>
 			</div>
 
-			<div>
-				{{>plate-edit}}
+			<div class="uk-width-1-2@m uk-width-1-1@s">
+				<label class="uk-form-label" for="">شماره پلاک</label>
+				<div class="uk-form-controls">
+					{{>plate-edit}}
+				</div>
 			</div>
 		</form>
 	</div>

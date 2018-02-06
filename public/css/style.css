@@ -34,8 +34,8 @@
  */
 html {
   /* 1 */
-  font-family: BNazanin, BYekan, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 24px;
+  font-family: BYekan, BNazanin, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
   /* 2 */
@@ -269,7 +269,7 @@ h4, .uk-h4,
 h5, .uk-h5,
 h6, .uk-h6 {
   margin: 0 0 20px 0;
-  font-family: BNazanin, BYekan, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: BYekan, BNazanin, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   color: #333;
   text-transform: none;
@@ -309,7 +309,7 @@ h4, .uk-h4 {
 }
 
 h5, .uk-h5 {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -3111,7 +3111,7 @@ select.uk-form-width-xsmall {
 /* Hover modifier
  ========================================================================== */
 .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover {
-  background: #fff;
+  background: #f8f8f8;
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
@@ -3122,7 +3122,7 @@ select.uk-form-width-xsmall {
  * Note: Header and Footer are only implemented for the default style
  */
 .uk-card-default {
-  background: #fff;
+  background: #f8f8f8;
   color: #3D5781;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
@@ -3132,7 +3132,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-default.uk-card-hover:hover {
-  background-color: #fff;
+  background-color: #ebebeb;
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
@@ -3158,7 +3158,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-primary.uk-card-hover:hover {
-  background-color: #1e87f0;
+  background-color: #0f7ae5;
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
@@ -3176,7 +3176,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-secondary.uk-card-hover:hover {
-  background-color: #222;
+  background-color: #151515;
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
@@ -4352,7 +4352,7 @@ ul.uk-nav-sub {
   padding: 0 15px;
   /* 3 */
   font-size: 0.875rem;
-  font-family: BNazanin, BYekan, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: BYekan, BNazanin, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   /* 4 */
   text-decoration: none;
 }
@@ -8784,7 +8784,7 @@ iframe.uk-cover {
  */
 .uk-logo {
   font-size: 1.5rem;
-  font-family: BNazanin, BYekan, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: BYekan, BNazanin, Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #3D5781;
   /* 1 */
   text-decoration: none;
@@ -13025,4 +13025,16 @@ iframe.uk-cover {
 
 .r-card-border {
   border: 1px solid #d4d4d4;
+}
+
+.r-car {
+  background: #f9f9f9;
+}
+
+.r-car .uk-drop {
+  width: 200px;
+}
+
+.r-progress-line {
+  border-bottom: 2px solid #3D5781;
 }
